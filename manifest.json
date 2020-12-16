@@ -1,0 +1,27 @@
+{
+    "name": "Unit Converter",
+    "version": "1.0",
+    "description": "An extensions that automatically converts units. Useful when following tutorials.",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "page_action": {
+        "default_icon": {
+            "32": "images/icon.png"
+        }
+    },
+    "manifest_version": 2
+}
